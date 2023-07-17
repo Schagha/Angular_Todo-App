@@ -1,0 +1,16 @@
+<div *ngIf="dataLength() > 0">
+  <h2>Character frequencies</h2>
+
+  <table>
+    <tr>
+      <th>Character</th>
+      <th>Lower Case</th>
+      <th>Upper Case</th>
+    </tr>
+    <tr *ngFor="let item of data | keyvalue">
+      <td> '{{ item.key.toUpperCase() }}' </td>
+      <td> {{ item.value.lowerCase }} </td>
+      <td> {{ item.value.upperCase }} </td>
+    </tr>
+  </table>
+</div>

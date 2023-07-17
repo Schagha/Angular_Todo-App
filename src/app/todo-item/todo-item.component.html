@@ -1,0 +1,9 @@
+<div
+  class="card"
+  [class.open]="!isDone() && !isDeleted()"
+  [class.done]="isDone()"
+  [class.deleted]="isDeleted()"
+  >
+  <h3 *ngIf="title">{{ title }}</h3>
+  <span>{{ description }}</span>
+</div>

@@ -1,0 +1,30 @@
+ul {
+  list-style-type: none;
+}
+
+dt {
+  float: left;
+  width: 3em;
+  text-align: left;
+
+  input[type='checkbox'] {
+    position: relative;
+    vertical-align: middle;
+    bottom: 1px;
+  }
+
+  .fas {
+    margin: 3px 3px 3px 4px;
+  }
+
+  .btn {
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+  }
+}
+
+dd {
+  padding-left: 5pt;
+}

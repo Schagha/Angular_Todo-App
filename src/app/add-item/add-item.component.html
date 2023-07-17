@@ -1,0 +1,25 @@
+<form
+  [class.valid]="valid"
+  [class.invalid]="!valid"
+  [formGroup]="addItemForm"
+  (ngSubmit)="onSubmit(addItemForm.value)"
+>
+  <div class="inputs">
+    <div class="title">
+      <label for="title">Title*:</label>
+      <input id="title" type="text" required formControlName="title" (input)="valid = true">
+    </div>
+  
+    <div class="description">
+      <label for="description">Description:</label>
+      <textarea id="description" formControlName="description">
+      </textarea>
+    </div>
+  </div>
+
+  <div class="submit">
+    <button class="btn" type="submit">
+      <i class="fas fa-plus-square"></i>
+    </button>
+  </div>
+</form>

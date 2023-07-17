@@ -1,0 +1,26 @@
+<div>
+  <label for="sortTitle">Sort by title:</label>
+  <button id="sortTitle" class="btn" (click)="sortItemsBy('title')">
+    <i *ngIf="!isSortedBy('title')" class="fas fa-sort"></i>
+    <i *ngIf="isSortedAscBy('title')" class="fas fa-sort-up"></i>
+    <i *ngIf="isSortedDescBy('title')"class="fas fa-sort-down"></i>
+  </button>
+</div>
+
+<div>
+  <label for="sortDescription">Sort by description:</label>
+  <button id="sortDescription" class="btn" (click)="sortItemsBy('description')">
+    <i *ngIf="!isSortedBy('description')" class="fas fa-sort"></i>
+    <i *ngIf="isSortedAscBy('description')" class="fas fa-sort-up"></i>
+    <i *ngIf="isSortedDescBy('description')"class="fas fa-sort-down"></i>
+  </button>
+</div>
+
+<div>
+  <label for="sortStatus">Sort by status:</label>
+  <button id="sortStatus" class="btn" (click)="sortItemsBy('status')">
+    <i *ngIf="!isSortedBy('status')" class="fas fa-sort"></i>
+    <i *ngIf="isSortedAscBy('status')" class="fas fa-sort-up"></i>
+    <i *ngIf="isSortedDescBy('status')"class="fas fa-sort-down"></i>
+  </button>
+</div>

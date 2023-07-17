@@ -1,0 +1,61 @@
+input,
+label {
+  display: block;
+}
+
+label {
+  font-size: smaller;
+  font-weight: 700;
+}
+
+form {
+  border-width: 1px;
+  border-color: cadetblue;
+  border-style: dashed;
+  border-radius: 3px;
+  padding: 5px;
+  position: relative;
+
+  div {
+    display: inline-block;
+  }
+
+  .inputs {
+    width: 80%;
+
+    .title,
+    .description {
+      width: 100%;
+      margin-bottom: 5pt;
+
+      input,
+      textarea {
+        width: 100%;
+      }
+    }
+  }
+
+  .submit {
+    width: 20%;
+    text-align: right;
+    float: right;
+
+    position: absolute;
+    height: 90%;
+
+    .btn {
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+      font-size: xx-large;
+
+      display: inline-block;
+      vertical-align: bottom;
+
+      position: absolute;
+      transform: translateY(-50%);
+      bottom: -30%;
+      right: -5%;
+    }
+  }
+}

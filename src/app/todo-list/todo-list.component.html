@@ -1,0 +1,35 @@
+<app-add-item></app-add-item>
+
+<app-list-header></app-list-header>
+
+<ul>
+  <li *ngFor="let item of items; index as i">
+    <dl>
+      <dt [class.deleted]="isDeleted(i)">
+        <div>
+          <input
+            *ngIf="!isDeleted(i)"
+            type="checkbox"
+            [attr.id]="'status-' + i"
+            [checked]="isChecked(i)"
+            (change)="changeChecked(i)"
+          />
+          <i class="fas fa-ban" *ngIf="isDeleted(i)"></i>
+          <button *ngIf="!isDeleted(i)" class="btn" (click)="delete(i)">
+            <i class="fas fa-trash-alt"></i>
+          </button>
+        </div>
+      </dt>
+      <dd>
+        <label [attr.for]="'status-' + i">
+          <app-todo-item
+            [title]="item.title"
+            [description]="item.description"
+            [(status)]="item.status"
+          >
+          </app-todo-item>
+        </label>
+      </dd>
+    </dl>
+  </li>
+</ul>

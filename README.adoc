@@ -1,0 +1,66 @@
+= ITB Consulting frontend dev interview
+:icons: font
+
+This project was generated with https://github.com/angular/angular-cli[Angular CLI] version 9.1.7 and later updated to version 16.1.1. 
+It is intended for frontend inteviews for https://www.itb-consulting.de/[ITB Consulting GmbH].
+Please https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository#_git_cloning[clone] this project prior to the interview and make sure, that you can edit it in the development environment of your choice.
+
+The project in its current state was changed only very slightly compared to the base project which was created using the command
+[source, sh]
+----
+ng new frontend-dev-interview
+----
+(See https://angular.io/tutorial/tour-of-heroes/toh-pt0[Create a new project] in the Angular "Tour of Heroes" tutorial for details.)
+
+In difference to that base project however, this project includes https://prettier.io/[Prettier] and has the npm scripts `format:fix` and `lint` setup and ready to be run.
+
+== Settings for the development environment
+
+Generally speaking, the tasks in this project can be solved without any IDE support beyond basic support for JavaScript and TypeScript.
+Many editors (including https://code.visualstudio.com/[VSCode]) come with this support.
+In others, plugins may have to be installed.
+
+In addition to this, you can add further integrations between Angular and your development environment.
+For example, to setup VSCode to work with the Chrome debugger, https://code.visualstudio.com/docs/nodejs/angular-tutorial#_configure-the-chrome-debugger[some configuration] is required.
+Also, with the https://marketplace.visualstudio.com/items?itemName=Angular.ng-template[Angular Language Service], the autocompletion and information provided by VSCode can be improved.
+This is, however, completely optional for the tasks at hand.
+
+== Initial setup
+
+Please ensure, that you clone the project via `git clone`.
+Downloading the zip file will not work for the interview process, since you will need to `git pull` some updates to the project at the beginning of the interview.
+
+To work with the project, please ensure that you have https://nodejs.org/[Node.js] v16 or v18 installed.
+
+WARNING: Versions earlier than Node 16 will NOT work.
+
+With this installed and the project checked out, run `npm i` in the command line to install the project dependencies.
+
+Once you have cloned the project, run the command line command `npm install` in the directory into which the project was cloned.
+This will download all required dependencies, including the `ng` tool (which is part of the https://www.npmjs.com/package/@angular/cli[@angular/cli] package).
+
+== Working on the code
+
+=== Development server
+
+Run `npm start` in a command line for a dev server.
+Navigate to http://localhost:4200/[localhost:4200].
+The app will automatically reload if you change any of the source files.
+
+=== Running unit tests
+
+Run `npm run test` in a command line to execute the unit tests via https://karma-runner.github.io[Karma].
+
+=== Automatic code formatting
+
+Since this project uses https://prettier.io/[Prettier], you can run `npm run format:fix` at any time to format your code in accordance with our code formatting rules.
+
+== Further help
+
+To get more help on the Angular CLI use `ng help` or go check out the https://github.com/angular/angular-cli/blob/master/README.md[Angular CLI README].
+
+== Copyright
+
+This project is intended for frontend inteviews for https://www.itb-consulting.de/[ITB Consulting GmbH].
+If you have been invited to such an interview, you are permitted to use this project in the context of the interview process.
+Any other use is only allowed with express permission by ITB Consulting.
